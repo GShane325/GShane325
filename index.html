@@ -1,79 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Game Projects</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #1a5f7a;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-            border-radius: 5px;
-        }
-        h1 {
-            margin-bottom: 0;
-        }
-        main {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin-top: 20px;
-        }
-        .game-entry {
-            margin-bottom: 40px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 20px;
-        }
-        .game-entry:last-child {
-            border-bottom: none;
-        }
-        .game-link {
-            display: inline-block;
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
-        .game-link:hover {
-            background-color: #45a049;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-    <header>
-        <h1>My Game Projects</h1>
-        <p>Gavin Hardy</p>
-    </header>
-    <main>
-        <div class="game-entry">
-            <h2>The Legend of Zelda (NES): The Eagle + Custom Level</h2>
-            <p>Built using C#, Unity, and GIMP, this project features a recreation of the classic NES game "The Legend of Zelda" with a focus on "The Eagle" dungeon and includes an exciting custom level.</p>
-            <p>Experience the nostalgia of the original game while enjoying new challenges in the custom-designed level.</p>
-            <p>My primary area of development revolved around the creation of enemies: movement, animation, health, and damage functionality. I also contributed to the precise recreation of weapons, collectibles, sprites, and custom level mechanics.</p>
-            <a href="https://gshane-325.itch.io/nes-the-legend-of-zelda-1984-custom-level" class="game-link">Play The Legend of Zelda</a>
-        </div>
-        <div class="game-entry">
-            <h2>The Dreamer's Construct</h2>
-            <p>Built using C#, Unity, and GIMP, this game takes players into a where fanciful world where dreams grant immense power. </p>
-            <p>While awake the world seems normal but hidden deep within the dream realm a dark power stirs. Adventure through the realms to uncover this mysterious power, but be warned of the allure of the darkness</p>
-            <a href="https://gshane-325.itch.io/the-dreamers-construct" class="game-link">Play The Dreamer's Construct</a>
-        </div>
-    </main>
+<body class="landing-page index-page">
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <!-- <li><a href="about.html">About</a></li> -->
+          <li><a href="Resume.pdf" target="_blank" rel="noopener">Résumé</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="hero-section">
+    <div class="hero-content">
+      <h1>Gavin Hardy</h1>
+      <p class="hero-description">
+        I’m a passionate developer focused on building innovative projects.
+        Dive into my portfolio to see what I’ve been working on.
+      </p>
+      <a class="btn-primary" href="projects.html">View My Projects</a>
+    </div>
+  </main>
+
+  <!-- Sticky Header Scroll Script -->
+  <script>
+    window.addEventListener("scroll", function() {
+      const header = document.querySelector(".site-header");
+      if (header && window.scrollY > 50) {
+        header.classList.add("scrolled");
+      } else if (header) {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="contact-info-footer">
+        <li><strong>Email:</strong> <a href="mailto:ghshane@umich.edu">ghshane@umich.edu</a></li>
+        <li><strong>Phone:</strong> 269-769-4822</li>
+        <li><strong>Location:</strong> Ann Arbor, MI</li>
+        <li><a href="https://linkedin.com/in/gavin-hardy" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>  
 </body>
 </html>

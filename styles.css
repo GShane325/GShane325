@@ -1,0 +1,365 @@
+/* INDEX */
+.index-page {
+  background-image: url('images/keyboard.jpg'); /* Same background as projects */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace; /* Matches your code vibe */
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Dark overlay for readability */
+.index-page::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1; /* Ensures the overlay sits behind content */
+}
+
+/* HEADER */
+/* Sticky Header Enhancements */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #333;
+  padding: 1em 0;
+  color: #fff;
+  transition: padding 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.site-header.scrolled {
+  background-color: #222; /* Slightly darker on scroll */
+  padding: 0.5em 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+/* Navigation styling inside header */
+.site-header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header nav li {
+  margin: 0 1em;
+}
+
+.site-header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4em 2em;
+  min-height: calc(100vh - 60px); /* Subtract header height if desired */
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 1; /* Ensure content is above overlay */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content .hero-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* CTA Button */
+.btn-primary {
+  display: inline-block;
+  background-color: #008080; /* Teal */
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #00aaaa;
+}
+
+
+/* PROJECTS */
+/* Projects page background and theme */
+.projects-page {
+  background-image: url('images/keyboard.jpg'); /* Place your keyboard image in an 'images' folder */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace; /* Monospaced font for a coding feel */
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Optional: Add a dark overlay for improved text contrast */
+.projects-page::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Styling for main content */
+.projects-page main {
+  position: relative;
+  padding: 2em;
+  z-index: 1;
+}
+
+/* Additional styling for headers and paragraphs */
+.projects-page h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.projects-page p {
+  font-size: 1.2em;
+}
+
+/* ===== Project Entry Container ===== */
+.project-entry {
+  display: flex;
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
+  background-color: rgba(255, 255, 255, 0.2); /* Subtle overlay */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+
+/* ===== Project Image (Optional) ===== */
+.project-image img {
+  max-width: 300px;
+  border-radius: 6px;
+  display: block;
+  object-fit: cover;
+}
+
+/* ===== Project Details ===== */
+.project-details {
+  flex: 1;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace; /* Matches your code vibe */
+}
+
+/* Title */
+.project-title {
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* Description */
+.project-description {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+
+/* ===== What I Worked On ===== */
+.project-contributions {
+  margin-bottom: 1rem;
+}
+
+.project-contributions h3 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: bold;
+}
+
+.project-contributions ul {
+  list-style: disc inside;
+  margin: 0;
+  padding-left: 1rem; /* Indent to differentiate from other lists */
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Skills List */
+.project-skills {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-skills li {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Optional Link (Button Style) */
+.project-link {
+  display: inline-block;
+  background-color: #008080; /* Teal or any color you prefer */
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #00aaaa; /* Hover color */
+}
+
+
+/* ABOUT */
+/* About Page Background */
+.about-page {
+  background-image: url('images/keyboard.jpg'); /* Same as projects page for consistency */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace; /* Code-like vibe */
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Dark overlay for readability */
+.about-page::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Main content container */
+.about-main {
+  position: relative;
+  padding: 2em;
+  z-index: 1; /* Ensure content is above overlay */
+}
+
+/* Hero/Intro Section */
+.about-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Additional About Content */
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about-content h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-content ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Optional: About Image */
+.about-image {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.about-image img {
+  max-width: 300px;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+
+/* Footer Styles */
+.site-footer {
+  background-color: #333; /* Matches your header background */
+  color: #fff;
+  padding: 1em 0;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.site-footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-info-footer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-info-footer li {
+  margin: 0 1em;
+  font-size: 0.9rem;
+}
+
+.contact-info-footer a {
+  color: #00aaaa;
+  text-decoration: none;
+}
+
+.contact-info-footer a:hover {
+  text-decoration: underline;
+}

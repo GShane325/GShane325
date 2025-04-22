@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="about-page">
+    <!-- Sticky Header -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="about-main">
+    <!-- Hero/Intro Section -->
+        <section class="about-hero">
+            <h1>About Me</h1>
+            <p>
+                Hi, I’m Gavin Hardy, a passionate developer focused on building innovative projects 
+                that blend creativity and functionality. My journey into development started with a 
+                curiosity for how things work under the hood—and it’s grown into a deep love for 
+                problem-solving and design.
+            </p>
+        </section>
+
+    <!-- Additional Content (Optional) -->
+    <section class="about-content">
+        <h2>My Background</h2>
+        <p>
+            I’ve worked with various languages and frameworks, from Unity C# for game development 
+            to JavaScript for web projects. I enjoy bringing ideas to life and collaborating with 
+            like-minded creators.
+        </p>
+
+        <h2>Skills & Interests</h2>
+        <ul>
+            <li>Unity</li>
+            <li>C, C++, C#, Python, HTML, CSS, JavaScript</li>
+            <li>GIMP & Graphic Design</li>
+            <li>Creative Writing & Narrative Design</li>
+        </ul>
+
+    <!-- You could also include an image, a timeline, or fun facts about yourself -->
+    <!-- Example Image (Optional):
+    <div class="about-image">
+    <img src="images/your-photo.jpg" alt="Your Photo" />
+    </div> 
+    -->
+    </section>
+</main>
+
+<!-- Sticky Header Scroll Script -->
+<script>
+    window.addEventListener("scroll", function() {
+        const header = document.querySelector(".site-header");
+        if (header && window.scrollY > 50) {
+            header.classList.add("scrolled");
+        } else if (header) {
+            header.classList.remove("scrolled");
+        }
+    });
+</script>
+<footer class="site-footer">
+    <div class="container">
+      <ul class="contact-info-footer">
+        <li><strong>Email:</strong> <a href="mailto:ghshane@umich.edu">ghshane@umich.edu</a></li>
+        <li><strong>Phone:</strong> 269-769-4822</li>
+        <li><strong>Location:</strong> Ann Arbor, MI</li>
+        <li><a href="https://linkedin.com/in/gavin-hardy" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

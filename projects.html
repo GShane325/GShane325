@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="projects-page">
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <!-- <li><a href="about.html">About</a></li> -->
+        <li><a href="Resume.pdf" target="_blank" rel="noopener">Résumé</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <h1>Projects</h1>
+    <p>Explore my latest coding projects and experiments.</p>
+    <!-- Add your project details here -->
+  </main>
+
+  <!-- Project Entries -->
+  <div class="project-entry">
+    <div class="project-details">
+      <h2 class="project-title">The Legend of Zelda (NES): The Eagle + Custom Level</h2>
+      <p class="project-description">
+        This project features a recreation of the classic NES game "The Legend of Zelda" with a focus on "The Eagle" dungeon and includes an exciting custom level. Experience the nostalgia of the original game while enjoying new challenges in the custom-designed level.
+      </p>
+      <div class="project-contributions">
+        <h3>Contributions</h3>
+        <ul>
+          <li>UI/UX design</li>
+          <li>Implemented core game mechanics</li>
+          <li>Integrated with a third-party API</li>
+        </ul>
+      </div>
+      <ul class="project-skills">
+        <li>C#</li>
+        <li>Unity</li>
+        <li>GIMP</li>
+      </ul>
+      <a href="https://gshane-325.itch.io/nes-the-legend-of-zelda-1984-custom-level" class="project-link">View Project</a>
+    </div>
+  </div>
+
+  <div class="project-entry">
+    <div class="project-image">
+      <img src="images/Dreamer'sConstruct.jpg" alt="Project Preview">
+    </div>
+    <div class="project-details">
+      <h2 class="project-title">The Dreamer's Construct</h2>
+      <p class="project-description">
+        Fall into a fanciful world where dreams grant immense power. While awake the world seems normal but hidden deep within the dream realm a dark power stirs. Adventure through the realms to uncover this mysterious power, but be warned of the allure of the darkness.
+      </p>
+      <ul class="project-skills">
+        <li>C#</li>
+        <li>Unity</li>
+        <li>GIMP</li>
+      </ul>
+      <a href="https://gshane-325.itch.io/the-dreamers-construct" class="project-link">View Project</a>
+    </div>
+  </div>
+
+  <div class="project-entry">
+    <div class="project-image">
+      <img
+        src="images/looping_Lolie.gif"
+        alt="Demo of My Project">
+    </div>
+    <div class="project-details">
+      <h2 class="project-title">Lolie the Roly-Poly</h2>
+      <p class="project-description">
+        Lolie the Roly-Poly is a 2D platformer where you play as a cute roly-poly bug. Navigate through various levels, avoiding obstacles and collecting leaves to try to help Lolie reunite with her family. The game features charming graphics and engaging gameplay mechanics.
+      </p>
+      <ul class="project-skills">
+        <li>C#</li>
+        <li>Unity</li>
+      </ul>
+      <a href="#" class="project-link">View Project</a>
+    </div>
+  </div>
+
+  <!-- Sticky Header Scroll Script -->
+  <script>
+    window.addEventListener("scroll", function() {
+      const header = document.querySelector(".site-header");
+      if (header && window.scrollY > 50) {
+        header.classList.add("scrolled");
+      } else if (header) {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="contact-info-footer">
+        <li><strong>Email:</strong> <a href="mailto:ghshane@umich.edu">ghshane@umich.edu</a></li>
+        <li><strong>Phone:</strong> 269-769-4822</li>
+        <li><strong>Location:</strong> Ann Arbor, MI</li>
+        <li><a href="https://linkedin.com/in/gavin-hardy" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
